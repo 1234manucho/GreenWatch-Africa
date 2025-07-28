@@ -1,0 +1,13 @@
+Flask
+Flask-SQLAlchemy
+Flask-Login
+Werkzeug
+Pillow
+python-dotenv
+psycopg2-binary
+Flask-Migrate
+ExifRead
+gunicorn
+Flask-WTF
+Flask-Mail
+

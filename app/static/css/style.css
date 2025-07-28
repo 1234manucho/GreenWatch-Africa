@@ -1,0 +1,48 @@
+/* style.css */
+
+/* Google Font: Inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* Base styling for the body */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #1a1a1a; /* Very dark grey for the overall page background */
+}
+
+/* Define custom CSS variables for brand colors.
+   These can be used directly in CSS or referenced by Tailwind's JIT compiler. */
+:root {
+    --color-dark-grey: #2c3e50; /* Primary dark grey for navbar, footer, etc. */
+    --color-dark-grey-2: #34495e; /* Slightly lighter dark grey for section backgrounds to provide contrast */
+    --color-brand-green: #27ae60; /* The main brand green for buttons, accents */
+    --color-brand-green-dark: #219250; /* A darker shade of green for hover effects */
+}
+
+/* Apply custom colors using utility classes where Tailwind doesn't directly support variables.
+   Note: For a full Tailwind setup, these would typically be in tailwind.config.js.
+   Here, they are defined as direct CSS classes for immediate use alongside the CDN. */
+
+/* Background colors */
+.bg-dark-grey { background-color: var(--color-dark-grey); }
+.bg-dark-grey-2 { background-color: var(--color-dark-grey-2); }
+.bg-brand-green { background-color: var(--color-brand-green); }
+
+/* Text colors */
+.text-dark-grey { color: var(--color-dark-grey); } /* Use this if you need dark text on a lighter background (e.g., if you introduce white elements later) */
+.text-brand-green { color: var(--color-brand-green); }
+
+/* Hover states for buttons */
+.hover\:bg-brand-green-dark:hover { background-color: var(--color-brand-green-dark); }
+.hover\:bg-gray-700:hover { background-color: #4a5568; } /* Specific for navbar logo hover */
+
+/* Border colors */
+.border-brand-green { border-color: var(--color-brand-green); }
+.border-gray-700 { border-color: #4a5568; } /* Tailwind's default gray-700 for footer separator */
+
+/* Focus ring colors for accessibility */
+.focus\:ring-brand-green:focus { --tw-ring-color: var(--color-brand-green); }
+
+/* Opacity for hero section background image */
+.opacity-20 { opacity: 0.2; } /* Tailwind utility, but defined here for context */
+
+/* Responsive font sizes and spacing handled by Tailwind classes in HTML */

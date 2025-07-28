@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenWatch Africa - Climate Resilience & Forest Protection</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for icons (optional, for social media in footer) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google Font: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS File -->
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body class="antialiased text-gray-200">
+
+    <!-- Navbar -->
+    <nav class="bg-dark-grey p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center px-4 md:px-0">
+            <!-- Logo -->
+            <a href="/" class="text-white text-2xl font-bold rounded-lg p-2 transition duration-300 hover:bg-gray-700">
+                <i class="fas fa-leaf text-brand-green mr-2"></i>GreenWatch Africa
+            </a>
+
+            <!-- Navigation Links (Hidden on small screens, shown on medium and up) -->
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="/" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-base font-medium transition duration-300">Home</a>
+
+                <a href="#" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-base font-medium transition duration-300">Dashboard</a>
+                <a href="#" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-base font-medium transition duration-300">About Us</a>
+                <a href="#" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-base font-medium transition duration-300">Contact</a>
+                <a href="/login"></a>
+                <button class="bg-brand-green text-white px-5 py-2 rounded-full font-semibold shadow-lg hover:bg-brand-green-dark transition duration-300 focus:outline-none focus:ring-2 focus:ring-brand-green focus:ring-opacity-75">
+                    Login
+                </button>
+                </a>
+               <a href="/register">
+  <button class="bg-transparent border border-brand-green text-brand-green px-5 py-2 rounded-full font-semibold hover:bg-brand-green hover:text-white transition duration-300 focus:outline-none focus:ring-2 focus:ring-brand-green focus:ring-opacity-75">
+    Register
+  </button>
+</a>
+
+            </div>
+
+            <!-- Mobile Menu Button (Hamburger Icon) -->
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-300 hover:text-white focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-dark-grey px-4 pt-2 pb-3 space-y-1 sm:px-3">
+            <a href="/" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Home</a>
+            <a href="/dashboard" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Dashboard</a>
+            <a href="/about" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">About Us</a>
+            <a href="/contact" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+                 <a href="/login"></a>
+                <button class="bg-brand-green text-white px-5 py-2 rounded-full font-semibold shadow-lg hover:bg-brand-green-dark transition duration-300 focus:outline-none focus:ring-2 focus:ring-brand-green focus:ring-opacity-75">
+                    Login
+                </button>
+                </a>
+               <a href="/register">
+  <button class="bg-transparent border border-brand-green text-brand-green px-5 py-2 rounded-full font-semibold hover:bg-brand-green hover:text-white transition duration-300 focus:outline-none focus:ring-2 focus:ring-brand-green focus:ring-opacity-75">
+    Register
+  </button>
+</a>
+        </div>
+    </nav>
+
+    <!-- Header / Hero Section -->
+    <header class="relative bg-gradient-to-r from-dark-grey to-gray-700 text-white py-24 md:py-32 overflow-hidden shadow-lg">
+        <div class="absolute inset-0 z-0 opacity-20" style="background-image: url('/static/images/back.jpg'); background-size: cover; background-position: center;"></div>
+        <div class="container mx-auto px-4 md:px-0 relative z-10 text-center">
+            <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6">
+                Safeguarding Africa's Green Heart
+            </h1>
+            <p class="text-lg md:text-2xl mb-10 max-w-3xl mx-auto opacity-90">
+                Leveraging cutting-edge drone technology and intelligent systems for proactive climate resilience and forest protection across Africa.
+            </p>
+            <a href="/" class="bg-brand-green text-white px-8 py-4 rounded-full text-lg font-bold shadow-xl hover:bg-brand-green-dark transform hover:scale-105 transition duration-300 ease-in-out focus:outline-none focus:ring-4 focus:ring-brand-green focus:ring-opacity-50">
+                Explore the Platform
+            </a>
+        </div>
+    </header>
+
+    <!-- Introduction/Problem Statement Section -->
+    <section class="py-16 md:py-24 bg-dark-grey-2"> <!-- Using a slightly lighter dark grey for contrast -->
+        <div class="container mx-auto px-4 md:px-0 max-w-4xl text-gray-200">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-brand-green mb-12">
+                The Urgent Need for Action
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-lg leading-relaxed">
+                <div>
+                    <h3 class="font-semibold text-xl mb-4 text-white">Rapid Environmental Degradation</h3>
+                    <p class="mb-4">Africa's vital ecosystems are under immense pressure from illegal logging, unsustainable land use practices, and the over-exploitation of natural resources. These activities relentlessly diminish forest cover, accelerate greenhouse gas emissions, and threaten the continent's rich biodiversity.</p>
+                    <p>Current monitoring methods often fall short – they are reactive, prohibitively expensive, or simply inefficient, failing to provide the timely data required for effective intervention.</p>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-xl mb-4 text-white">Our Proactive Approach</h3>
+                    <p class="mb-4">GreenWatch Africa steps in to bridge this critical gap. We're building a tech-driven system that combines the power of aerial surveillance drones with an intuitive web-based platform. This integration allows for continuous monitoring, early detection of environmental violations, and facilitates rapid, informed responses.</p>
+                    <p>Our mission is to empower local communities, government agencies, and conservationists with the tools and evidence they need to act decisively, protecting Africa's natural heritage for future generations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark-grey text-gray-300 py-10">
+        <div class="container mx-auto px-4 md:px-0 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+            <!-- About -->
+            <div>
+                <h3 class="text-white text-lg font-bold mb-4">GreenWatch Africa</h3>
+                <p class="text-sm leading-relaxed">
+                    Dedicated to protecting Africa's forests and natural resources through advanced technology and community empowerment.
+                </p>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+                <h3 class="text-white text-lg font-bold mb-4">Quick Links</h3>
+                <ul class="space-y-2">
+                    <li><a href="#" class="hover:text-white text-sm transition duration-300">Home</a></li>
+                    <li><a href="#" class="hover:text-white text-sm transition duration-300">Dashboard</a></li>
+                    <li><a href="#" class="hover:text-white text-sm transition duration-300">About Us</a></li>
+                    <li><a href="#" class="hover:text-white text-sm transition duration-300">Contact</a></li>
+                    <li><a href="#" class="hover:text-white text-sm transition duration-300">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact & Social -->
+            <div>
+                <h3 class="text-white text-lg font-bold mb-4">Connect With Us</h3>
+                <p class="text-sm mb-4">info@greenwatchafrica.org</p>
+                <div class="flex justify-center md:justify-start space-x-4">
+                    <a href="#" class="text-gray-300 hover:text-white transition duration-300 text-xl"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-gray-300 hover:text-white transition duration-300 text-xl"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-gray-300 hover:text-white transition duration-300 text-xl"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="text-gray-300 hover:text-white transition duration-300 text-xl"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="border-t border-gray-700 mt-10 pt-6 text-center text-sm text-gray-400">
+            &copy; 2025 GreenWatch Africa. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
